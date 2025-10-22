@@ -3,13 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deforestación</title>
+  <title>Deforestación en Colombia y el mundo</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='CSS/deforestation.css') }}">
 </head>
 <body>
-  <h1>Deforestación</h1>
-  <p>La tala indiscriminada de bosques destruye hábitats, disminuye la biodiversidad y contribuye al cambio climático. Proteger y reforestar áreas verdes es clave para mantener el equilibrio del planeta.</p>
-  <img src="deforestacion.jpg" alt="Deforestación">
-  <a href="#" class="btn">Contribuye</a>
+  <header>
+    <h1>Deforestación en Colombia y el mundo</h1>
+    <nav>
+      <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#causas">Causas</a></li>
+        <li><a href="#regiones">Regiones afectadas</a></li>
+        <li><a href="#consecuencias">Consecuencias</a></li>
+        <li><a href="#fauna">Fauna</a></li>
+        <li><a href="#tecnologia">Tecnología</a></li>
+        <li><a href="#exitos">Casos de éxito</a></li>
+        <li><a href="#acciones">Acciones</a></li>
+        <li><a href="#video">Video</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introducción -->
+    <section id="introduccion">
+      <h2>Introducción</h2>
+      <p>
+        La deforestación es uno de los problemas ambientales más graves del planeta. Se trata de la eliminación o degradación de grandes áreas boscosas, 
+        provocada principalmente por la actividad humana. Este proceso afecta la biodiversidad, el clima, la disponibilidad de agua y la estabilidad del suelo.
+      </p>
+      <p>
+        Según la <strong>FAO (Organización de las Naciones Unidas para la Alimentación y la Agricultura)</strong>, el mundo pierde cada año más de 
+        <strong>10 millones de hectáreas de bosque</strong>. A este ritmo, regiones como la Amazonía podrían alcanzar un punto de no retorno ecológico antes de 2050.
+      </p>
+      <img src="{{ url_for('static', filename='imagenes/deforestacion_intro.jpg') }}" alt="Bosque deforestado">
+    </section>
+
+    <!-- Causas -->
+    <section id="causas">
+      <h2>Causas de la deforestación</h2>
+      <ul>
+        <li><strong>Agricultura intensiva:</strong> Expansión de cultivos como la palma, la soya o la caña.</li>
+        <li><strong>Ganadería extensiva:</strong> Tala de bosques para crear potreros y zonas de pastoreo.</li>
+        <li><strong>Minería:</strong> La minería ilegal genera pérdida de cobertura vegetal y contaminación.</li>
+        <li><strong>Infraestructura:</strong> Construcción de carreteras, represas y zonas urbanas.</li>
+        <li><strong>Incendios forestales:</strong> Muchos son provocados y destruyen bosques enteros.</li>
+        <li><strong>Tala ilegal:</strong> Actividad clandestina que genera daños ecológicos irreparables.</li>
+      </ul>
+      <img src="{{ url_for('static', filename='imagenes/deforestacion3.jpg') }}" alt="Tala ilegal de árboles">
+    </section>
+
+    <!-- Regiones afectadas -->
+    <section id="regiones">
+      <h2>Regiones más afectadas</h2>
+      <ul>
+        <li><strong>Amazonía:</strong> Ha perdido más del 17% de su superficie original.</li>
+        <li><strong>Sudeste Asiático:</strong> Grandes pérdidas por producción de aceite de palma.</li>
+        <li><strong>África Central:</strong> Tala y agricultura migratoria en el Congo.</li>
+        <li><strong>Colombia:</strong> Caquetá, Meta, Guaviare y Putumayo entre las más afectadas.</li>
+      </ul>
+      <img src="{{ url_for('static', filename='imagenes/amazonas_d.jpg') }}" alt="Selva amazónica">
+    </section>
+
+    <!-- Consecuencias -->
+    <section id="consecuencias">
+      <h2>Consecuencias de la deforestación</h2>
+      <ul>
+        <li>Pérdida de biodiversidad.</li>
+        <li>Contribución al cambio climático.</li>
+        <li>Erosión y pérdida de fertilidad del suelo.</li>
+        <li>Desaparición de comunidades indígenas.</li>
+        <li>Reducción de fuentes hídricas y sequías.</li>
+      </ul>
+      <img src="{{ url_for('static', filename='imagenes/erosion_suelo.jpg') }}" alt="Erosión del suelo">
+    </section>
+
+    <!-- Fauna -->
+    <section id="fauna">
+      <h2>Impacto en la fauna</h2>
+      <p>
+        La deforestación destruye hábitats de especies como el jaguar, el orangután, el oso perezoso y muchas aves tropicales. 
+        Más de un millón de especies están en peligro de extinción debido a la pérdida de bosques.
+      </p>
+      <img src="{{ url_for('static', filename='imagenes/fauna_afectada.jpg') }}" alt="Fauna afectada">
+    </section>
+
+    <!-- Tecnología -->
+    <section id="tecnologia">
+      <h2>Uso de tecnología para combatir la deforestación</h2>
+      <ul>
+        <li>Satélites de observación (NASA, IDEAM).</li>
+        <li>Inteligencia artificial para detectar áreas en riesgo.</li>
+        <li>Drones y sistemas LIDAR para medir bosques.</li>
+        <li>Aplicaciones móviles para denunciar tala ilegal.</li>
+      </ul>
+      <img src="{{ url_for('static', filename='imagenes/tecnologia_bosques.jpg') }}" alt="Tecnología contra la deforestación">
+    </section>
+
+    <!-- Casos de éxito -->
+    <section id="exitos">
+      <h2>Casos de éxito en restauración</h2>
+      <ul>
+        <li><strong>Costa Rica:</strong> Ha recuperado más del 50% de su cobertura boscosa.</li>
+        <li><strong>Etiopía:</strong> Plantó 350 millones de árboles en un solo día.</li>
+        <li><strong>Colombia:</strong> Programa “Sembrar nos une” para plantar 180 millones de árboles.</li>
+      </ul>
+      <img src="{{ url_for('static', filename='imagenes/reforestacion.jpg') }}" alt="Reforestación en acción">
+    </section>
+
+    <!-- Acciones -->
+    <section id="acciones">
+      <h2>¿Qué puedes hacer tú?</h2>
+      <ul>
+        <li>Planta árboles o apoya programas de reforestación.</li>
+        <li>Compra productos con sello ecológico.</li>
+        <li>Evita la tala ilegal y promueve el consumo responsable.</li>
+        <li>Apoya políticas públicas ambientales.</li>
+      </ul>
+      <a href="#" class="btn">Actúa hoy</a>
+    </section>
+
+    <!-- Video -->
+    <section id="video">
+      <h2>Video educativo sobre la deforestación</h2>
+      <p>Mira cómo la pérdida de bosques amenaza nuestro futuro.</p>
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/zqEIGx8uL5g"
+          title="Video sobre deforestación"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Cita final -->
+    <section>
+      <blockquote>
+        “Proteger los bosques no es una opción, es una necesidad. Sin ellos no hay aire, no hay agua, no hay vida.”
+        <br>– ONU Medio Ambiente
+      </blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 · Proyecto Python Pro</p>
+  </footer>
 </body>
 </html>
