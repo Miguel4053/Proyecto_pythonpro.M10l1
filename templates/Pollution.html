@@ -7,9 +7,138 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='CSS/pollution.css') }}">
 </head>
 <body>
-  <h1>Contaminación</h1>
-  <p>La contaminación afecta la calidad del aire, del agua y del suelo, impactando nuestra salud y la de los ecosistemas. Es fundamental reducir el uso de plásticos, cuidar los recursos hídricos y promover energías limpias.</p>
-  <img src="contaminacion.jpg" alt="Contaminación ambiental">
-  <a href="#" class="btn">Aprende más</a>
+  <header>
+    <h1>Contaminación</h1>
+    <nav>
+      <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#tipos">Tipos de contaminación</a></li>
+        <li><a href="#causas">Causas</a></li>
+        <li><a href="#impactos">Impactos</a></li>
+        <li><a href="#consecuencias">Consecuencias</a></li>
+        <li><a href="#como-actuar">Cómo actuar</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#video">Video</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introduccion">
+      <h2>Introducción</h2>
+      <p>
+        La contaminación es la presencia de sustancias dañinas en el aire, agua y suelo, que afectan la salud de los seres vivos y el equilibrio del medio ambiente. La actividad humana, como la industria, el transporte y la generación de residuos, es la principal responsable de estos daños.
+      </p>
+      <p>
+        La contaminación tiene efectos visibles e invisibles: smog en las ciudades, ríos contaminados, basura plástica en los océanos y gases de efecto invernadero que contribuyen al cambio climático.
+      </p>
+      <img src="{{ url_for('static', filename='imagenes/contaminacion_aire.jpg') }}" alt="Contaminación ambiental">
+    </section>
+
+    <section id="tipos">
+      <h2>Tipos de contaminación</h2>
+      <ul>
+        <li><strong>Contaminación del aire:</strong> emisión de gases tóxicos y partículas que afectan la salud respiratoria y contribuyen al cambio climático.</li>
+        <li><strong>Contaminación del agua:</strong> vertido de químicos, plásticos y residuos domésticos que dañan ecosistemas acuáticos y la vida humana.</li>
+        <li><strong>Contaminación del suelo:</strong> uso excesivo de pesticidas, fertilizantes y desechos industriales que degradan la tierra.</li>
+        <li><strong>Contaminación acústica:</strong> ruidos excesivos que afectan la salud mental y física de las personas y animales.</li>
+        <li><strong>Contaminación lumínica:</strong> exceso de iluminación que altera los ciclos naturales de plantas, animales y personas.</li>
+      </ul>
+    </section>
+
+    <section id="causas">
+      <h2>Causas</h2>
+      <ul>
+        <li>Quema de combustibles fósiles en transporte e industria.</li>
+        <li>Uso excesivo de plásticos y generación de residuos sólidos.</li>
+        <li>Vertido de químicos y desechos industriales en ríos y mares.</li>
+        <li>Deforestación y degradación del suelo.</li>
+        <li>Expansión urbana sin planificación ambiental.</li>
+      </ul>
+    </section>
+
+    <section id="impactos">
+      <h2>Impactos</h2>
+
+      <article>
+        <img src="{{ url_for('static', filename='imagenes/smog_ciudad.jpg') }}" alt="Smog en ciudad">
+        <p>
+          La contaminación del aire provoca problemas respiratorios, alergias y enfermedades cardiovasculares en millones de personas. Además, contribuye al calentamiento global y a la lluvia ácida que daña ecosistemas.
+        </p>
+      </article>
+
+      <article>
+        <img src="{{ url_for('static', filename='imagenes/rio_contaminado.jpg') }}" alt="Río contaminado">
+        <p>
+          Los cuerpos de agua contaminados afectan la vida acuática y ponen en riesgo la salud de las comunidades que dependen de ellos para beber, cocinar y pescar. Sustancias químicas y metales pesados se acumulan en la cadena alimentaria.
+        </p>
+      </article>
+
+      <article>
+        <img src="{{ url_for('static', filename='imagenes/vertido_industrial.jpg') }}" alt="Vertido industrial">
+        <p>
+          Los residuos industriales y químicos alteran la composición del suelo, afectando la agricultura y la biodiversidad. También contaminan napas de agua subterránea y afectan ecosistemas enteros.
+        </p>
+      </article>
+    </section>
+
+    <section id="consecuencias">
+      <h2>Consecuencias</h2>
+      <ul>
+        <li>Aumento de enfermedades respiratorias y cardiovasculares.</li>
+        <li>Degradación de ecosistemas y pérdida de biodiversidad.</li>
+        <li>Escasez de agua potable y alimentos seguros.</li>
+        <li>Alteración del clima y contribución al cambio climático.</li>
+        <li>Impactos económicos por daños a la salud, agricultura y pesca.</li>
+      </ul>
+    </section>
+
+    <section id="como-actuar">
+      <h2>Cómo actuar</h2>
+      <p>
+        Reducir la contaminación es responsabilidad de todos. Algunas acciones son: usar transporte sostenible, reducir, reutilizar y reciclar residuos, consumir productos ecológicos y apoyar políticas ambientales.
+      </p>
+      <p>
+        Participar en campañas de limpieza, plantar árboles y educar a la comunidad sobre prácticas sostenibles ayuda a mejorar el ambiente y la calidad de vida.
+      </p>
+      <a href="#" class="btn">Actúa ahora</a>
+    </section>
+
+    <section id="recursos">
+      <h2>Recursos y herramientas</h2>
+      <ul>
+        <li>Organizaciones ambientales y ONGs que monitorean la contaminación.</li>
+        <li>Aplicaciones para medir la calidad del aire y agua.</li>
+        <li>Informes y estadísticas de agencias como la OMS y la ONU.</li>
+        <li>Guías educativas para reducir residuos y mejorar hábitos sostenibles.</li>
+      </ul>
+    </section>
+
+    <section id="video">
+      <h2>Video educativo sobre contaminación</h2>
+      <p>
+        Este video explica cómo la contaminación afecta al planeta y qué podemos hacer para reducirla en nuestra vida diaria.
+      </p>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/9FgGOjY3H1U" 
+                title="Video sobre contaminación" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section>
+      <blockquote>
+        La contaminación es un problema que afecta a todos. Cada acción cuenta: reducir residuos, cuidar el aire y el agua, y promover hábitos sostenibles protege la salud de nuestro planeta y de las personas.
+      </blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 Proyecto de Python Pro</p>
+  </footer>
 </body>
 </html>

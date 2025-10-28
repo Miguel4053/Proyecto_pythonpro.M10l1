@@ -9,10 +9,22 @@
 <body>
   <header>
     <h1>Cambio Climático</h1>
+    <nav>
+      <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#evidencia">Evidencia</a></li>
+        <li><a href="#impactos">Impactos</a></li>
+        <li><a href="#causas">Causas</a></li>
+        <li><a href="#consecuencias">Consecuencias</a></li>
+        <li><a href="#como-actuar">Cómo actuar</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#video">Video</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section>
+    <section id="introduccion">
       <h2>Introducción</h2>
       <p>
         El cambio climático es uno de los mayores desafíos que enfrenta la humanidad. La Tierra está experimentando un aumento global de la temperatura debido a la acumulación de gases de efecto invernadero, principalmente CO₂, metano y óxidos de nitrógeno. La actividad humana, como la quema de combustibles fósiles, la deforestación y la agricultura intensiva, es la principal responsable de estos cambios acelerados.
@@ -26,7 +38,7 @@
       <img src="{{ url_for('static', filename='imagenes/clima4.jpg') }}" alt="Cambio climático">
     </section>
 
-    <section>
+    <section id="evidencia">
       <h2>Evidencia del Cambio Climático</h2>
       <p>
         La evidencia de que la Tierra se está calentando es abrumadora. Los registros de temperatura global muestran incrementos significativos en el último siglo. Glaciares en los Andes, Himalaya, Alpes y Groenlandia retroceden, afectando fuentes de agua para millones de personas.
@@ -40,7 +52,7 @@
       <img src="{{ url_for('static', filename='imagenes/hielo_artico.jpg') }}" alt="Hielo Ártico">
     </section>
 
-    <section>
+    <section id="impactos">
       <h2>Impactos</h2>
 
       <article>
@@ -84,7 +96,7 @@
       </article>
     </section>
 
-    <section>
+    <section id="causas">
       <h2>Causas</h2>
       <ul>
         <li>Emisión de gases de efecto invernadero por transporte, industria y producción de energía.</li>
@@ -96,7 +108,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="consecuencias">
       <h2>Consecuencias sociales y económicas</h2>
       <ul>
         <li>Desplazamiento de comunidades costeras.</li>
@@ -107,7 +119,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="como-actuar">
       <h2>Cómo actuar</h2>
       <p>
         Cada acción cuenta: ahorrar energía, plantar árboles, usar transporte sostenible y apoyar políticas ambientales ayuda a mitigar los efectos del cambio climático. La educación y conciencia ambiental son esenciales para frenar los impactos futuros.
@@ -118,7 +130,7 @@
       <a href="#" class="btn">Actúa ahora</a>
     </section>
 
-    <section>
+    <section id="recursos">
       <h2>Recursos y herramientas de NASA</h2>
       <ul>
         <li>Satélites que monitorean temperatura, nivel del mar, hielo y gases de efecto invernadero.</li>
@@ -129,8 +141,7 @@
       </ul>
     </section>
 
-
-    <section>
+    <section id="video">
       <h2>Video educativo sobre cambio climático</h2>
       <p>
         Este video explica de manera clara los efectos del cambio climático y cómo podemos contribuir a mitigarlos desde nuestras acciones cotidianas.
@@ -154,7 +165,7 @@
   </main>
 
   <footer>
-    <p>2025 Proyecto de python pro</p>
+    <p>2025 Proyecto de Python Pro</p>
   </footer>
 </body>
 </html>
