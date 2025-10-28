@@ -1,77 +1,85 @@
+/* Reset y tipografía */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #a8dadc;
-  color: #1d3557;
-  line-height: 1.6;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-header {
-  background-color: #457b9d;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-nav ul {
-  list-style: none;
   padding: 0;
-  margin: 10px 0 0 0;
+  background-color: #f0f0f0;
+}
+
+/* Header y navegación */
+header {
+  background-color: #2196F3;
+  padding: 20px;
+}
+
+header nav {
   display: flex;
   justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
-nav ul li {
-  margin: 10px;
-}
-
-nav ul li a {
-  color: #ffffff;
+header nav a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  padding: 10px 20px;
+  background-color: #1e88e5;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
 }
 
-nav ul li a:hover {
-  color: #f1faee;
+header nav a:hover {
+  background-color: #42a5f5;
+  transform: scale(1.05);
 }
 
+/* Main y contenedores de cuadros */
 main {
-  max-width: 1100px;
-  margin: auto;
-  padding: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cuadro {
+  background-color: white;
+  border: 2px solid #2196F3;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.cuadro h3 {
+  color: #2196F3;
+  margin-bottom: 10px;
+}
+
+.cuadro ul {
+  padding-left: 20px;
   text-align: left;
 }
 
-section {
-  margin-bottom: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 25px;
-  border-radius: 10px;
-}
-
-h1, h2 {
-  color: #1d3557;
-}
-
-ul {
-  text-align: left;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-/* Imagenes del menú principal */
 .cuadro img {
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-  border: 3px solid #1d3557
+  max-width: 100%;
+  border: 2px solid #2196F3;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
